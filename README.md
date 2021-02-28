@@ -1,5 +1,26 @@
-# kfserving-keras-transformer
-A transforming for KFServing that users keras_image_helper
+# KFServing Keras Transformer
+
+A transforming for KFServing that users [keras_image_helper](https://github.com/alexeygrigorev/keras-image-helper).
+
+
+## Conext for running locally
+
+Suppose we deployed a model with KFServing without a tranformer:
+
+```yaml
+apiVersion: "serving.kubeflow.org/v1alpha2"
+kind: "InferenceService"
+metadata:
+  name: "clothing-model"
+spec:
+  default:
+    predictor:
+      serviceAccountName: sa
+      tensorflow:
+        storageUri: "s3://mlbookcamp-models/clothing-model"
+```
+
+And the model is deployed to clothing-model.default.kubeflow.mlbookcamp.com.
 
 
 ## Running locally
