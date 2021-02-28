@@ -1,6 +1,6 @@
 # KFServing Keras Transformer
 
-A transforming for KFServing that users [keras_image_helper](https://github.com/alexeygrigorev/keras-image-helper).
+A transformer for KFServing that users [keras_image_helper](https://github.com/alexeygrigorev/keras-image-helper).
 
 
 ## Conext for running locally
